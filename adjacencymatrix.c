@@ -58,9 +58,9 @@ void generateGraph(int* g) {
     for (i = 0; i < ROWS; i++) {
         for (j = 0; j < COLUMNS; j++) {
             if (i == j) {
-                g[i * ROWS + j] = 0;  // Why do we have this condition?
+                g[i * COLUMNS + j] = 0;  // Why do we have this condition?
             } else {
-                g[i * ROWS + j] = rand() % 2;
+                g[i * COLUMNS + j] = rand() % 2;
             }
         }
     }
